@@ -14,9 +14,9 @@ public class GetWeatherRequest {
     private String city;
 
     @BooleanValue
-    private Boolean isInterpreted;
+    private boolean isInterpreted;
 
-    public GetWeatherRequest(String city, Boolean isInterpreted) {
+    public GetWeatherRequest(String city, boolean isInterpreted) {
         this.city = city;
         this.isInterpreted = isInterpreted;
     }

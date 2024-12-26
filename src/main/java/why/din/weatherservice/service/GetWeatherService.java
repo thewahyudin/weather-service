@@ -36,7 +36,7 @@ public class GetWeatherService {
 
     public ResponseEntity<GetWeatherResponse> getWeather(GetWeatherRequest req) {
         String city = req.getCity();
-        Boolean isInterpreted = req.getIsInterpreted();
+        boolean isInterpreted = req.isInterpreted();
 
         String res_code = "";
         String res_msg = "";
@@ -79,7 +79,6 @@ public class GetWeatherService {
                     Map<String, String> weatherError = gson.fromJson(weatherDataMap.get("Error").toString(), Map.class);
                     res_code = ResponseCode.BACKEND_ERROR.getCode();
                     res_msg = String.format("%s %d: %s", ResponseCode.BACKEND_ERROR.getMessage(), weatherError.get("code"), weatherError.get("message"));
-                    ;
                 } else {
                     detail = weatherDataMap;
                     if (isInterpreted){
