@@ -1,7 +1,6 @@
 # weather-service
 *Stay sync with the weather!*  
-This project is developed in Java and uses [Redis](https://redis.io/) to store the weather data fetched from [WeatherAPI](https://www.weatherapi.com)  for a specific period. This enables quicker retrieval of weather information for the same city in future requests.  
-This service also interprets the weather data, making it easier for users to understand.   
+This project is developed in Java and uses [Redis](https://redis.io/) to store the weather data fetched from [WeatherAPI](https://www.weatherapi.com)  for a specific period. This enables quicker retrieval of weather information for the same city in future requests. This service also interprets the weather data, making it easier for users to understand.   
 ![Weather Service API](./images/postman_weather-service.png) 
 
 ### How effective is Redis in speeding up processing time?
